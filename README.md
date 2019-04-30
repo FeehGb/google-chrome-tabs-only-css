@@ -21,41 +21,50 @@ How to import
 ```
 
 -- To Start
-```html
+``html
 <div grid class="group-tabs"></div>
-```
+``
 Each tab there are 3 main lines and need to fallow the sequence to work fine
 
-1º - ```html 
+1º - ``html 
 <input tab hide="hide" type="radio"  id="rTab-1" name="tab"> 
+``
 ```
 The input has five main attribute 
-    1 ) tab  - The global style's tabs          * needs to be the same in all inputs
-    2 ) hide - used to hide the input tag       * needs to be the same in all inputs
-    3 ) type - To define the type of tag        * needs to be the same in all inputs
-    4 ) id   - id to identification the tag     * needs to be unique
-    5 ) name - name of group tab                * needs to be unique each tabs group
+    - tab  - The global style's tabs          * needs to be the same in all inputs
+    - hide - used to hide the input tag       * needs to be the same in all inputs
+    - type - To define the type of tag        * needs to be the same in all inputs
+    - id   - id to identification the tag     * needs to be unique
+    - name - name of group tab                * needs to be unique each tabs group
+```
 
 2º -
-```html
+``html
     <label class='grid-label' for='rTab-1'><span>Tab 1</span></label>
+``
+
 ```
 The label has 2 main attribute
-    1 ) grid-label  - The global style's label          * needs to be the same in all inputs
-    2 ) for         - To link the label and input       * needs to be the same of your linkage input
+    - grid-label  - The global style's label          * needs to be the same in all inputs
+    - for         - To link the label and input       * needs to be the same of your linkage input
     
 - Inside of label you will need to put a span tag to work the shadow in the label - 
-    
+```
+
+  
 3º -
-```html 
+``html 
 <div flex class="tab-content">
     Content of tabs
 </div>
+``
+
 ```
 The div has 1 main attribute
-    1 ) tab-conten  - The global style's label          * needs to be the same in all divs
-  
-Full example with two tabs
+    - tab-conten  - The global style's label          * needs to be the same in all divs
+```
+
+- Full example with two tabs
 ```html
     <div grid class="group-tabs">
         <!-- START GRID TAB 001 -->
@@ -83,6 +92,7 @@ Full example with two tabs
 ```
 
 ### To use Dark theme
+
 You only need to put the dark atribuite in main div
 ```html
     <div dark grid class="group-tabs">
@@ -133,7 +143,7 @@ example:
     ```css
         .group-tabs [tab]:not(:checked):nth-of-type(10n+1) + label.grid-label::after
     ```
-    to
+     to
     ```css
         .group-tabs [tab]:not(:checked):nth-of-type("newNumber"n+1) + label.grid-label::after
     ```
@@ -149,7 +159,7 @@ example:
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+1.0.0
 
 ## Authors
 
