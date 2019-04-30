@@ -21,14 +21,15 @@ How to import
 ```
 
 -- To Start
-``html
+```html
 <div grid class="group-tabs"></div>
-``
+```
 Each tab there are 3 main lines and need to fallow the sequence to work fine
 
 1º - ``html 
 <input tab hide="hide" type="radio"  id="rTab-1" name="tab"> 
 ``
+
 ```
 The input has five main attribute 
     - tab  - The global style's tabs          * needs to be the same in all inputs
@@ -39,9 +40,9 @@ The input has five main attribute
 ```
 
 2º -
-``html
+```html
     <label class='grid-label' for='rTab-1'><span>Tab 1</span></label>
-``
+```
 
 ```
 The label has 2 main attribute
