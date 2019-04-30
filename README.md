@@ -1,0 +1,1 @@
+# google-chrome-tabs-only-css
