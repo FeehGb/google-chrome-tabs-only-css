@@ -83,24 +83,23 @@ Full example with two tabs
 ```
 
 ### To use Dark theme
+You only need to put the dark atribuite in main div
 ```html
     <div dark grid class="group-tabs">
 ```
-You only need to put the dark atribuite in main div
 
 ### To make the tabs responsive
+You only need to put the responsive atribuite in main div
 ```html
     <div responsive grid class="group-tabs">
 ```
-You only need to put the responsive atribuite in main div
 
 ### To set icon
 
 There are two ways to set icons on tab - 
 
-1º - with text *default
-I recomend use only svg files :
-
+1º) with text *default
+- I recomend use only svg files
 ```html
 <label class='grid-label' for='rTab-15'>
     <div icon>
@@ -110,7 +109,7 @@ I recomend use only svg files :
 </label>
 ```
 
-2º - with icon only 
+2º) with icon only 
 *Do not use the span tag
 
 ```html
@@ -131,10 +130,13 @@ First you need to change in :root vars
 2º) You will need to find "10" in every single css declaration - unfortunately I could not put it in a variable
 example:
     change
+    ```css
         .group-tabs [tab]:not(:checked):nth-of-type(10n+1) + label.grid-label::after
+    ```
     to
+    ```css
         .group-tabs [tab]:not(:checked):nth-of-type("newNumber"n+1) + label.grid-label::after
-
+    ```
 
 
 ## Built With
