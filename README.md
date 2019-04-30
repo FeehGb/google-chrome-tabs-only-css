@@ -29,11 +29,11 @@ Each tab there are 3 main lines and need to fallow the sequence to work fine
 1º )
 ```
 The input has five main attribute 
-    - tab  - The global style's tabs          * needs to be the same in all inputs
-    - hide - used to hide the input tag       * needs to be the same in all inputs
-    - type - To define the type of tag        * needs to be the same in all inputs
-    - id   - id to identification the tag     * needs to be unique
-    - name - name of group tab                * needs to be unique each tabs group
+    - tab  - The global style's tabs                * needs to be the same in all inputs
+    - hide - used to hide the input tag             * needs to be the same in all inputs
+    - type - To define the type of tag              * needs to be the same in all inputs
+    - id   - id to identification the tag           * needs to be unique
+    - name - name of group tab                      * needs to be unique each tabs group
 ```
  
 ```html 
@@ -42,12 +42,13 @@ The input has five main attribute
 
 
 2º )
+```
 The label has 2 main attribute
-    - grid-label  - The global style's label          * needs to be the same in all inputs
-    - for         - To link the label and input       * needs to be the same of your linkage input
+    - grid-label  - The global style's label        * needs to be the same in all inputs
+    - for         - To link the label and input     * needs to be the same of your linkage input
     
-- Inside of label you will need to put a span tag to work the shadow in the label - 
-
+- Inside of label you will need to put a span tag to work the shadow in the label
+```
 ```html
     <label class='grid-label' for='rTab-1'><span>Tab 1</span></label>
 ```
@@ -57,7 +58,7 @@ The label has 2 main attribute
 3º )
 ```
 The div has 1 main attribute
-    - tab-conten  - The global style's label          * needs to be the same in all divs
+    - tab-conten  - The global style's label        * needs to be the same in all divs
 ```
 
 ```html 
@@ -109,7 +110,7 @@ You only need to put the responsive atribuite in main div
 
 ### To set icon
 
-There are two ways to set icons on tab - 
+There are two ways to set icons on tab
 
 1º) with text *default
 - I recomend use only svg files
@@ -134,13 +135,14 @@ There are two ways to set icons on tab -
 ```
 
 ### To set the number's tabs
-I do not recommend to do this  ten tabs is enouth to work, but if you want you can
+I do not recommend to do this ten tabs is enouth to work, but if you want you can
 You will need to change style.css file
 
+```
 First you need to change in :root vars
 
-1º) --tabs-amount : 10; <-- number's tabs ->
-2º) You will need to find "10" in every single css declaration - unfortunately I could not put it in a variable
+1º ) --tabs-amount : 10;
+2º ) You will need to find "10" in every single css declaration - unfortunately I could not put it in a variable
 example:
     change
     ```css
@@ -150,7 +152,7 @@ example:
     ```css
         .group-tabs [tab]:not(:checked):nth-of-type("newNumber"n+1) + label.grid-label::after
     ```
-
+```
 
 ## Built With
 
