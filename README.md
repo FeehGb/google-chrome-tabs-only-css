@@ -17,7 +17,7 @@ To use you will only need donwload the style.css and fallow these tips:
 
 How to import
 ```html
-    <link rel='stylesheet' href='./style.css' />
+<link rel='stylesheet' href='./style.css' />
 ```
 
 -- To Start
@@ -70,28 +70,28 @@ The div has 1 main attribute
 
 - Full example with two tabs
 ```html
-    <div grid class="group-tabs">
-        <!-- START GRID TAB 001 -->
-        <input hide="hide" type="radio" tab id="rTab-1" name="tab1" checked="checked">
-        <label class='grid-label' for='rTab-1'>
-            <span>Tab 01</span>
-        </label>
-        <div flex class="tab-content">
-            Content's tab 001
-        </div>
-        <!-- END GRID TAB 001 -->
-        
-        
-        <!-- START GRID TAB 002 -->
-        <input hide="hide" type="radio" tab id="rTab-2" name="tab1">
-        <label class='grid-label' for='rTab-2'>
-            <span>Tab 01</span>
-        </label>
-        <div flex class="tab-content">
-            Content's tab 002
-        </div>
-        <!-- END GRID TAB 002 -->
+<div grid class="group-tabs">
+    <!-- START GRID TAB 001 -->
+    <input hide="hide" type="radio" tab id="rTab-1" name="tab1" checked="checked">
+    <label class='grid-label' for='rTab-1'>
+        <span>Tab 01</span>
+    </label>
+    <div flex class="tab-content">
+        Content's tab 001
     </div>
+    <!-- END GRID TAB 001 -->
+    
+    
+    <!-- START GRID TAB 002 -->
+    <input hide="hide" type="radio" tab id="rTab-2" name="tab1">
+    <label class='grid-label' for='rTab-2'>
+        <span>Tab 01</span>
+    </label>
+    <div flex class="tab-content">
+        Content's tab 002
+    </div>
+    <!-- END GRID TAB 002 -->
+</div>
    
 ```
 
@@ -99,13 +99,13 @@ The div has 1 main attribute
 
 You only need to put the dark atribuite in main div
 ```html
-    <div dark grid class="group-tabs">
+<div dark grid class="group-tabs">
 ```
 
 ### To make the tabs responsive
 You only need to put the responsive atribuite in main div
 ```html
-    <div responsive grid class="group-tabs">
+<div responsive grid class="group-tabs">
 ```
 
 ### To set icon
