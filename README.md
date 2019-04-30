@@ -26,10 +26,7 @@ How to import
 ```
 Each tab there are 3 main lines and need to fallow the sequence to work fine
 
-1º - ``html 
-<input tab hide="hide" type="radio"  id="rTab-1" name="tab"> 
-``
-
+1º )
 ```
 The input has five main attribute 
     - tab  - The global style's tabs          * needs to be the same in all inputs
@@ -38,32 +35,37 @@ The input has five main attribute
     - id   - id to identification the tag     * needs to be unique
     - name - name of group tab                * needs to be unique each tabs group
 ```
-
-2º -
-```html
-    <label class='grid-label' for='rTab-1'><span>Tab 1</span></label>
+ 
+```html 
+<input tab hide="hide" type="radio"  id="rTab-1" name="tab"> 
 ```
 
-```
+
+2º )
 The label has 2 main attribute
     - grid-label  - The global style's label          * needs to be the same in all inputs
     - for         - To link the label and input       * needs to be the same of your linkage input
     
 - Inside of label you will need to put a span tag to work the shadow in the label - 
+
+```html
+    <label class='grid-label' for='rTab-1'><span>Tab 1</span></label>
 ```
 
-  
-3º -
-``html 
-<div flex class="tab-content">
-    Content of tabs
-</div>
-``
 
+  
+3º )
 ```
 The div has 1 main attribute
     - tab-conten  - The global style's label          * needs to be the same in all divs
 ```
+
+```html 
+<div flex class="tab-content">
+    Content of tabs
+</div>
+```
+
 
 - Full example with two tabs
 ```html
