@@ -1,4 +1,4 @@
-# google-chrome-tabs-only-css
+# CSS tabs like Google Ghrome
 
 This project is clone of google chrome tabs used only CSS
 
@@ -145,13 +145,10 @@ First you need to change in :root vars
 2º ) You will need to find "10" in every single css declaration - unfortunately I could not put it in a variable
 example:
     change
-    ```css
         .group-tabs [tab]:not(:checked):nth-of-type(10n+1) + label.grid-label::after
-    ```
      to
-    ```css
         .group-tabs [tab]:not(:checked):nth-of-type("newNumber"n+1) + label.grid-label::after
-    ```
+    
 ```
 
 ## Built With
@@ -162,7 +159,7 @@ example:
 
 
 
-## Versioning
+## version
 
 1.0.0
 
